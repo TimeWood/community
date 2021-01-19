@@ -15,4 +15,10 @@ public interface DiscussPostService {
     public List<DiscussPost> findDiscussPost(int userId, int offset, int limit);
 
     public int findDiscussPostRows(int userId);
+
+    public int addDiscussPost(DiscussPost discussPost);
+
+    public DiscussPost findDiscussPostById(int id);
+
+    public int updateCommentCount(int id, int commentCount);
 }
